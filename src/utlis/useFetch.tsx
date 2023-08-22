@@ -29,6 +29,7 @@ const useFetch = (axiosParams: AxiosRequestConfig) => {
     if (axiosParams.method === "post" || axiosParams.method === "get") {
       fetchData(axiosParams);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return { response, error, loading, sendData };
