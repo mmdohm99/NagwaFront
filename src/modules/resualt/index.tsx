@@ -22,7 +22,7 @@ const Resualt: React.FC<Props> = () => {
 
   const { response, loading } = useFetch({
     method: "post",
-    url: `/exam`,
+    url: `https://nagwaback.onrender.com/exam`,
     data: { score },
   });
   // this function is used to redirect after finishin the exam to home page and remove

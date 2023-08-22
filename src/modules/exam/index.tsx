@@ -29,8 +29,9 @@ const Exam: React.FC<Props> = () => {
   } = useContext(ExamContextModule);
   const { response, loading } = useFetch({
     method: "get",
-    url: `/exam`,
+    url: `https://nagwaback.onrender.com/exam`,
   });
+  console.log(response);
   // this function turns the route protector on
   useEffect(() => {
     questionNumber === 0 && setStarted(true);
@@ -46,7 +47,7 @@ const Exam: React.FC<Props> = () => {
 
     setSubmited(true);
     await axios
-      .post("/exam/resualt", {
+      .post("https://nagwaback.onrender.com/exam/resualt", {
         word: examQuestions[questionNumber],
         a: value?.toLowerCase(),
       })
