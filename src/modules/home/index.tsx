@@ -13,7 +13,7 @@ const Home: React.FC<Props> = () => {
   return (
     <div className="homeContainer">
       <Container>
-        <h3 className="animate-charcter"> Welcome to Nagwa Exams .</h3>
+        <h3 className="animate-charcter"> Welcome to Do7a Exams .</h3>
 
         <Button
           width={"29%"}
